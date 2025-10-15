@@ -112,11 +112,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Smooth Scroll for Explore Packages
   const initSmoothScroll = () => {
-    const explorePackages = document.querySelector('.hero-content .btn-primary');
-    if (explorePackages) {
-      explorePackages.addEventListener('click', (e) => {
+  const buttons = document.querySelectorAll('.hero-content .btn-primary');
+  
+  buttons.forEach(button => {
+    const href = button.getAttribute('href');
+    
+    // Only apply smooth scroll if the href starts with "#"
+    if (href && href.startsWith('#')) {
+      button.addEventListener('click', (e) => {
         e.preventDefault();
-        const target = document.querySelector(explorePackages.getAttribute('href'));
+        const target = document.querySelector(href);
         if (target) {
           window.scrollTo({
             top: target.offsetTop - 80,
@@ -125,7 +130,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
-  };
+  });
+};
+
 
   // Countdown Timer
   const targetDate = new Date('2025-12-25T00:00:00Z');

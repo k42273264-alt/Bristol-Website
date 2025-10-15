@@ -141,30 +141,43 @@
     <div class="overview-container">
       <div class="overview-divider"></div>
       <h2>Delight in Every Bite</h2>
-      <p data-animate>Located in the heart of Bristol’s historic Old City, Thecha at Bristol Grand Hotel by Sunday offers an unforgettable Asian dining experience. Enjoy vibrant flavors in our restaurant or bespoke private dining events, showcasing authentic Asian cuisine.</p>
+      <p data-animate>Located in the heart of Bristol’s historic Old City, Its Thecha at Bristol Grand Hotel by Sunday offers an unforgettable Asian dining experience. Enjoy vibrant flavors in our restaurant or bespoke private dining events, showcasing authentic Asian cuisine.</p>
       <div class="overview-divider"></div>
     </div>
   </section>
 
   <!-- Dining Venues Section -->
-  <section class="dining-venues-section" id="dining-venues">
-    <div class="section-label">Our Restaurant</div>
-    <!-- <h2>Thecha</h2> -->
-    <div class="venue-container">
-      <p class="venue-description" data-animate>Thecha, our signature Asian restaurant, offers a vibrant dining experience with authentic flavors and a modern twist, perfect for special occasions. Located within the hotel, it accommodates up to 80 guests in a sophisticated setting.</p>
-      <p class="additional-dining-note">The Bar is also available for light bites and drinks.</p>
-      <!-- <button class="details-btn" data-venue="Thecha" aria-label="View details for Thecha">View Details</button> -->
+  <!-- Dining Venues Section -->
+<section class="dining-venues-section" id="dining-venues">
+  <div class="section-label">Our Restaurant</div>
+  <div class="venue-container">
+    <p class="venue-description" data-animate>
+      Its Thecha, our signature Asian restaurant, offers an all-day dining experience featuring breakfast, lunch, and dinner. Enjoy authentic Asian flavors with a modern twist in an elegant setting accommodating up to 60 guests at a time. Reservations are available, subject to availability.
+    </p>
+    <ul class="dining-details">
+      <li><strong>Cuisine:</strong> Thecha – Asian</li>
+      <li><strong>Breakfast Timings:</strong> Monday to Friday: 7:00 AM – 10:00 AM | Saturday & Sunday: 7:00 AM – 10:30 AM</li>
+      <li><strong>Lunch & Dinner:</strong> Available throughout the day</li>
+      <li><strong>Capacity:</strong> 60 guests seated</li>
+    </ul>
+    <p class="additional-dining-note"><strong>Bar & Lounge:</strong> Open daily from 11:00 AM to 11:00 PM.</p>
+    <!-- <p class="additional-dining-note"><strong>Other Dining Areas:</strong> N/A</p> -->
+  </div>
+
+  <!-- Venue Details Modal -->
+  <div class="modal" id="venueModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+      <span class="modal-close" aria-label="Close modal">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <div id="modalDetails"></div>
+      <a href="mailto:dining.bristol@hotelssunday.com" class="btn-primary" 
+         onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Enquire Now', 'value': 1 });">
+         Enquire Now
+      </a>
     </div>
-    <!-- Venue Details Modal -->
-    <div class="modal" id="venueModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-      <div class="modal-content">
-        <span class="modal-close" aria-label="Close modal">&times;</span>
-        <h3 id="modalTitle"></h3>
-        <div id="modalDetails"></div>
-        <a href="mailto:dining.bristol@hotelssunday.com" class="btn-primary" onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Enquire Now', 'value': 1 });">Enquire Now</a>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Gallery Section -->
   <section class="gallery-section" id="gallery">
@@ -216,12 +229,12 @@
       <div class="package-card" data-animate>
         <img src="images/salad-791891.jpg" alt="Asian Tasting Menu" loading="lazy">
         <h3>Asian Tasting Menu</h3>
-        <p>Indulge in a curated selection of authentic Asian dishes, showcasing vibrant flavors and fresh ingredients, served in Thecha’s elegant dining room for up to 80 guests.</p>
+        <p>Indulge in a curated selection of authentic Asian dishes, showcasing vibrant flavors and fresh ingredients, served in Its Thecha's elegant dining room for up to 80 guests.</p>
       </div>
       <div class="package-card" data-animate>
         <img src="images/bar2.jpg" alt="Cocktail Pairing Experience" loading="lazy">
         <h3>Cocktail Pairing Experience</h3>
-        <p>Enjoy a unique dining experience with expertly crafted cocktails paired with Asian-inspired dishes, perfect for an evening at Thecha Bar.</p>
+        <p>Enjoy a unique dining experience with expertly crafted cocktails paired with Asian-inspired dishes, perfect for an evening at Its Thecha Bar.</p>
       </div>
     </div>
   </section>
@@ -235,7 +248,7 @@
       <div class="package-card" data-animate>
         <img src="images/dining6.jpg" alt="Private Dining Package" loading="lazy">
         <h3>Private Dining</h3>
-        <p>Host an exclusive dining event for up to 80 guests in Thecha, with bespoke Asian menus and dedicated service in a historic setting.</p>
+        <p>Host an exclusive dining event for up to 80 guests in Its Thecha, with bespoke Asian menus and dedicated service in a historic setting.</p>
       </div>
     </div>
   </section>
@@ -246,11 +259,11 @@
     <h2>Delighted Diners</h2>
     <div class="testimonials-container">
       <div class="testimonial-card active" data-animate>
-        <p>“Dining at Thecha was an absolute delight. The Asian flavors were authentic and vibrant, and the historic ambiance of the hotel made it a truly special evening.”</p>
+        <p>“Dining at Its Thecha was an absolute delight. The Asian flavors were authentic and vibrant, and the historic ambiance of the hotel made it a truly special evening.”</p>
         <h4>Emma T, July 2025</h4>
       </div>
       <div class="testimonial-card" data-animate>
-        <p>“The cocktail pairing experience at Thecha Bar was fantastic. The combination of unique drinks and Asian dishes was unforgettable!”</p>
+        <p>“The cocktail pairing experience at Its Thecha Bar was fantastic. The combination of unique drinks and Asian dishes was unforgettable!”</p>
         <h4>James & Lily</h4>
       </div>
     </div>
