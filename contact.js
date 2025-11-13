@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeModal = document.querySelector('.modal-close');
 
   form.addEventListener('submit', (e) => {
-    e.preventDefault(); // Prevent default for demo; remove if using Formsubmit
+    // e.preventDefault(); // Prevent default for demo; remove if using Formsubmit
     modal.classList.add('active');
     form.reset();
   });
