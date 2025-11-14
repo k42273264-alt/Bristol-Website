@@ -1,15 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Form Submission
-  const form = document.getElementById('contactForm');
   const modal = document.getElementById('formModal');
   const closeModal = document.querySelector('.modal-close');
+  const form = document.getElementById('contactForm');
 
-  form.addEventListener('submit', (e) => {
-    // e.preventDefault(); // Prevent default for demo; remove if using Formsubmit
-    modal.classList.add('active');
-    form.reset();
+  // Allow FormSubmit to submit normally (no preventDefault, no reset)
+  form.addEventListener('submit', () => {
+    // Let form submit naturally
   });
 
+  // Close modal on X button
   closeModal.addEventListener('click', () => {
     modal.classList.remove('active');
   });
@@ -21,7 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // ---- Show Thank You Modal After Redirect ----
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('submitted') === 'true') {
+    modal.classList.add('active');
+  }
+
+  // --------------------------
   // Collapsible Panels
+  // --------------------------
   const collapsibleToggles = document.querySelectorAll('.collapsible-toggle');
   collapsibleToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
