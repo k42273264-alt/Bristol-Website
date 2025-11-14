@@ -152,10 +152,7 @@
           <label for="mobile">Mobile</label>
           <input type="tel" id="mobile" name="mobile" required aria-required="true" placeholder="Your Mobile Number">
         </div>
-        <div class="form-group">
-          <label for="mobile">Hotel Name</label>
-          <input type="text" id="name" name="name" required aria-required="true" placeholder="Hotel Name">
-        </div>
+        
         <div class="form-group">
           <label for="event">Nature of Event</label>
           <select id="event" name="event" required aria-required="true">
@@ -184,6 +181,7 @@
           <label for="marketing">I would like to receive marketing emails and offers.</label>
         </div>
         <button type="submit" class="btn-primary" aria-label="Submit Contact Form">Submit</button>
+        <input type="hidden" name="hotel_name" value="Bristol Grand Hotel by Sunday">
         <input type="hidden" name="_subject" value="New Contact Form Submission">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
